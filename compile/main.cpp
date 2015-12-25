@@ -1,4 +1,10 @@
-#include "say.h"
+
+
+void say();
+void say();
+void say();
+void say();
+
 
 int main() {
   say();
