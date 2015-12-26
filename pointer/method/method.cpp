@@ -7,6 +7,7 @@ void hoge() {
 }
 
 int main(void) {
-  hoge();
+  void (*func)() = hoge;
+  func();
   return 0;
 }
