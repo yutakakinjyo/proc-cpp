@@ -1,11 +1,8 @@
 #include <iostream>
+#include "Loop.h"
 
 int add(int a, int b) {
   return a + b;
-}
-
-int loop(int (*add)(int,int)) {
-  return add(1,2);
 }
 
 int main(void) {
