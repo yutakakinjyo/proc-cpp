@@ -5,7 +5,13 @@ int add(int a, int b) {
   return a + b;
 }
 
+int sub(int a, int b) {
+  return a - b;
+}
+
+
 int main(void) {
   std::cout << loop(add) << std::endl;
+  std::cout << loop(sub) << std::endl;
   return 0;
 }

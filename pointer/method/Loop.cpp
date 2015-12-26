@@ -1,5 +1,5 @@
 #include "Loop.h"
 
-int loop(int (*add)(int, int)) {
-  return add(1,2);
+int loop(int (*calc)(int, int)) {
+  return calc(1,2);
 }
