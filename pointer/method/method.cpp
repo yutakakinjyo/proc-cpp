@@ -1,11 +1,14 @@
 #include <iostream>
 
-void hoge() {
-  std::cout << "hoge" << std::endl;
+int add(int a, int b) {
+  return a + b;
+}
+
+int loop(int (*add)(int,int)) {
+  return add(1,2);
 }
 
 int main(void) {
-  void (*func)() = hoge;
-  func();
+  std::cout << loop(add) << std::endl;
   return 0;
 }
