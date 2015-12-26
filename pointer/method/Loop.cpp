@@ -9,11 +9,10 @@ int loop(int (*calc)(int, int)) {
   return sum;
 }
 
-std::string regex_loop(std::string str, std::string (*regex)(std::string)) {
+std::string regex_loop(std::string str, boost::regex pattern, std::string (*regex)(std::string)) {
   std::string::const_iterator begin = str.begin();
   std::string::const_iterator end = str.end();
   boost::smatch matches;
-  boost::regex pattern(".+");
   while (boost::regex_search(begin, end, matches, pattern)) {
     std::string match = matches.str();
     str.replace(begin, begin+match.size(), regex(match));
