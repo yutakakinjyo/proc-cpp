@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Temp.h"
 
 int main(void) {
-  std::cout << "hoge" << std::endl;
+  Temp temp;
+  temp.pre();
   return 0;
 }
