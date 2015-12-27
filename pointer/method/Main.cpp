@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Loop.h"
 
-
 int add(int a, int b) {
   return a + b;
 }
@@ -19,12 +18,11 @@ int main(void) {
   std::string target = "(hoge)";
   boost::regex pattern("hoge");
 
-  Loop hog = new Loop();
-  
-  std::cout << loop(add) << std::endl;
-  std::cout << loop(sub) << std::endl;
-  std::cout << regex_loop(target, pattern, regex) << std::endl;
+  Loop *obj = new Loop();
+
+  std::cout << obj->calc_loop(add) << std::endl;
+  std::cout << obj->calc_loop(sub) << std::endl;
+  std::cout << obj->regex_loop(target, pattern, regex) << std::endl;
 
   return 0;
 }
-

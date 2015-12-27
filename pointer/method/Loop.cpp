@@ -1,6 +1,6 @@
 #include "Loop.h"
 
-int loop(int (*calc)(int, int)) {
+int Loop::calc_loop(int (*calc)(int, int)) {
   int sum = 0;
   for(int i = 0; i < 10; i++) {
     sum += calc(1,2);
@@ -9,7 +9,7 @@ int loop(int (*calc)(int, int)) {
   return sum;
 }
 
-std::string regex_loop(std::string str, boost::regex pattern, std::string (*regex)(std::string)) {
+std::string Loop::regex_loop(std::string str, boost::regex pattern, std::string (*regex)(std::string)) {
   std::string::const_iterator begin = str.begin();
   std::string::const_iterator end = str.end();
   boost::smatch matches;

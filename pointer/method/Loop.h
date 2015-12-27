@@ -1,6 +1,11 @@
 #include <iostream>
 #include <boost/regex.hpp>
 
-int loop(int (*add)(int, int));
-std::string regex_loop(std::string, boost::regex, std::string (*regex)(std::string));
+class Loop {
+
+ public:
+  int calc_loop(int (*add)(int, int));
+  std::string regex_loop(std::string, boost::regex, std::string (*regex)(std::string));
+
+};
 
