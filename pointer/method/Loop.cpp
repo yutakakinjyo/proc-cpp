@@ -15,7 +15,7 @@ std::string regex_loop(std::string str, boost::regex pattern, std::string (*rege
   boost::smatch matches;
   while (boost::regex_search(begin, end, matches, pattern)) {
     std::string match = matches.str();
-    str.replace(begin, begin+match.size(), regex(match));
+    str.replace(begin+1, begin+match.size(), regex(match));
     begin = matches[0].second;
   }
   return str;
