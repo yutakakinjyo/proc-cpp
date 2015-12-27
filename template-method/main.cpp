@@ -3,10 +3,8 @@
 
 int main(void) {
   
-  Impl impl;
-  impl.pre();
-  impl.cont();
-  impl.post();
+  Temp *temp = new Impl();
+  temp->exec();
       
   return 0;
 }
