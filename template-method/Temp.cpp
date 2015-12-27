@@ -12,5 +12,12 @@ void Temp::post() {
   std::cout << "post" << std::endl;
 }
 
+void Temp::exec() {
+  pre();
+  cont();
+  post();
+}
+
+
 
 

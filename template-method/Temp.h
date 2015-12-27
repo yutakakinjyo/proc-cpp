@@ -3,8 +3,9 @@
 class Temp {
 
  public:
-  void pre();
-  void cont();
-  void post();
+  virtual void pre();
+  virtual void cont();
+  virtual void post();
+  void exec();
 
 };
