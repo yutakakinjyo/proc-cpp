@@ -1,5 +1,6 @@
-#include <iostream>
+#include "Impl.h"
 
 int main(void) {
-  std::cout << "hoge" << std::endl;
+  Impl impl;
+  impl.exec();
 }
