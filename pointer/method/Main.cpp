@@ -18,11 +18,11 @@ int main(void) {
   std::string target = "(hoge)";
   boost::regex pattern("hoge");
 
-  Loop *obj = new Loop();
+  Loop loop;
 
-  std::cout << obj->calc_loop(add) << std::endl;
-  std::cout << obj->calc_loop(sub) << std::endl;
-  std::cout << obj->regex_loop(target, pattern, regex) << std::endl;
+  std::cout << loop.calc_loop(add) << std::endl;
+  std::cout << loop.calc_loop(sub) << std::endl;
+  std::cout << loop.regex_loop(target, pattern, regex) << std::endl;
 
   return 0;
 }
