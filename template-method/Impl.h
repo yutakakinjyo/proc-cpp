@@ -1,10 +1,9 @@
 #include <iostream>
+#include "Temp.h"
 
-class Temp {
+class Impl : public Temp {
 
  public:
-  void pre();
   void cont();
-  void post();
 
 };

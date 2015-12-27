@@ -1,8 +1,12 @@
 #include <iostream>
-#include "Temp.h"
+#include "Impl.h"
 
 int main(void) {
-  Temp temp;
-  temp.pre();
+  
+  Impl impl;
+  impl.pre();
+  impl.cont();
+  impl.post();
+      
   return 0;
 }
