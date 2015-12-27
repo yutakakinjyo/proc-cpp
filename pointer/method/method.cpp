@@ -15,11 +15,12 @@ std::string regex(std::string match) {
 
 int main(void) {
 
-  boost::regex pattern(".+");
+  std::string target = "(hoge)";
+  boost::regex pattern("hoge");
 
   std::cout << loop(add) << std::endl;
   std::cout << loop(sub) << std::endl;
-  std::cout << regex_loop("(hoge)", pattern, regex) << std::endl;
+  std::cout << regex_loop(target, pattern, regex) << std::endl;
 
   return 0;
 }
