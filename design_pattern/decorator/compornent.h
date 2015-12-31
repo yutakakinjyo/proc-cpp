@@ -3,7 +3,7 @@
 
 class Compornent {
  public:
-  virtual void name() = 0;
+  virtual std::string name() = 0;
 };
 
 #endif

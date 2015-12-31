@@ -4,6 +4,6 @@
 
 int main(void) {
   Compornent *comp = new Decorator(new ConcreteCompornent());
-  comp->name();
+  std::cout << comp->name() << std::endl;
   return 0;
 }

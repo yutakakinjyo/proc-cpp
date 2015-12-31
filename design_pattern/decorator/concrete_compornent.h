@@ -3,5 +3,5 @@
 
 class ConcreteCompornent : public Compornent {
  public:
-  virtual void name();
+  virtual std::string name();
 };

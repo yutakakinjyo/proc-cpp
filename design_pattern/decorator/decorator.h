@@ -7,5 +7,5 @@ class Decorator : public Compornent {
 
  public:
   Decorator(Compornent *comp);
-  virtual void name();
+  virtual std::string name();
 };
