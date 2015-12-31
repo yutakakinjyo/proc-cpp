@@ -1,6 +1,8 @@
 #include <iostream>
+#include "concrete_compornent.h"
 
 int main(void) {
-  std::cout << "hoge" << std::endl;
+  Compornent *comp = new ConcreteCompornent();
+  comp->name();
   return 0;
 }
