@@ -5,7 +5,7 @@
 
 class Product {
  public:
-  std::string name();
+  virtual std::string name();
 };
 
 #endif

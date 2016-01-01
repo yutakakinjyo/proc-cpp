@@ -7,7 +7,6 @@
 class Factory {
  public:
   std::string name();
- protected:
   virtual Product* product();
 };
 

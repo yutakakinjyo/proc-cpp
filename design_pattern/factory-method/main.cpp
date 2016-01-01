@@ -1,6 +1,9 @@
 #include <iostream>
+#include "factory.h"
+#include "concrete_factory.h"
 
 int main(void) {
-  std::cout << "hoge" << std::endl;
+  Factory *factory = new ConcreteFactory();
+  std::cout << factory->product()->name() << std::endl;
   return 0;
 }
