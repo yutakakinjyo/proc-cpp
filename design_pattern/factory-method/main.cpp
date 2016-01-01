@@ -4,6 +4,6 @@
 
 int main(void) {
   Factory *factory = new ConcreteFactory();
-  std::cout << factory->create_product()->name() << std::endl;
+  std::cout << factory->name() << std::endl;
   return 0;
 }
