@@ -6,7 +6,7 @@
 
 class ConcreteFactory : public Factory {
  public:
-  virtual Product* product();
+  Product* create_product();
 };
 
 #endif

@@ -7,7 +7,7 @@
 class Factory {
  public:
   std::string name();
-  virtual Product* product();
+  virtual Product* create_product();
 };
 
 #endif
