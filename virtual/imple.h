@@ -1,10 +1,10 @@
 #ifndef VIRTUAL_IMPLE_H
 #define VIRTUAL_IMPLE_H
 
-#include "interface.h"
+#include "abstract.h"
 
-class Imple : public Interface {
-    void pure_virtual_method();
+class Imple : public Abstract {
+public:
     void pure_virtual_method();
 };
 
