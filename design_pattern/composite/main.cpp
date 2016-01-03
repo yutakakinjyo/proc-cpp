@@ -1,5 +1,7 @@
-#include <iostream>
+#include "composite.h"
 
 int main(void) {
-    std::cout << "hoge" << std::endl;
+    Leaf *leaf = new Leaf();
+    Composite *composite = new Composite();
+    composite->add(leaf);
 }
