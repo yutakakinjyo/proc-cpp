@@ -5,7 +5,7 @@
 int main(void) {
   Product *product = new Product(10);
   product->getCost();
-  ProductAdapter product_adapter(product);
-  product_adapter.getPrice();
+  ProductPrice *product_price = new ProductAdapter(product);
+  product_price->getPrice();
   return 0;
 }
