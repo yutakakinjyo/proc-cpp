@@ -7,7 +7,7 @@
 
 class ProductAdapter : public ProductPrice {
  public:
-  ProductAdapter(int cost);
+  ProductAdapter(Product *product);
   void getPrice();
   
   Product *product;

@@ -1,7 +1,7 @@
 #include "product_adapter.h"
 
-ProductAdapter::ProductAdapter(int cost) {
-  this->product = new Product(cost);
+ProductAdapter::ProductAdapter(Product *product) {
+  this->product = product;
 }
 
 void ProductAdapter::getPrice() {
