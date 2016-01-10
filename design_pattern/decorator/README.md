@@ -1,4 +1,4 @@
-decorator pattern sample
+# Decorator pattern
 
 飾り枠と中身を同一視する。同じ親クラスを持つパターン。
 decorator をかぶせることで、中身と修飾を別に実装することができる。
