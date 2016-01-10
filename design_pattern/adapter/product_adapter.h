@@ -1,5 +1,5 @@
 #ifndef PRODUCT_ADAPTER_H
-#define PRODUCT_ADAPTR_H
+#define PRODUCT_ADAPTER_H
 
 #include <iostream>
 #include "product.h"
