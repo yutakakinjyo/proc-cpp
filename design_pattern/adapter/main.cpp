@@ -1,6 +1,8 @@
 #include <iostream>
+#include "product.h"
 
 int main(void) {
-  std::cout << "hoge" << std::endl;
+  Product product(10);
+  product.getCost();
   return 0;
 }
