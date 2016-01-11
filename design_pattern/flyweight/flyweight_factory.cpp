@@ -6,8 +6,9 @@ FlyweightFactory& FlyweightFactory::getInstance() {
 }
 
 int FlyweightFactory::getFlyweight(std::string string) {
-  if (this->map.find(string) != this->map.end()) {
+  if (map.find(string) == map.end()) {
     map[string] = string.size();
+    std::cout << "nothing key " + string << std::endl;
   }
   return map[string];
 }
